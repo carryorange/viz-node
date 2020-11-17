@@ -1,0 +1,23 @@
+{
+  "name": "viz-node",
+  "version": "1.0.0",
+  "description": "A node service that provides RESTful graph visualization APIs",
+  "main": "viz-server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carryorange/viz-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/carryorange/viz-node/issues"
+  },
+  "homepage": "https://github.com/carryorange/viz-node#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
