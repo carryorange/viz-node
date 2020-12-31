@@ -1,0 +1,35 @@
+{
+    "root": {
+        "label": "1",
+        "left": {
+            "label": "2",
+            "left": {
+                "label": "4"
+            },
+            "right": {
+                "label": "5",
+                "left": {
+                    "label": "8"
+                }
+            }
+        },
+        "right": {
+            "label": "3",
+            "left": {
+                "label": "6",
+                "left": {
+                    "label": "9"
+                },
+                "right": {
+                    "label": "10"
+                }
+            },
+            "right": {
+                "label": "7",
+                "right": {
+                    "label": "11"
+                }
+            }
+        }
+    }
+}

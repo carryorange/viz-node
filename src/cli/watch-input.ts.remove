@@ -1,0 +1,21 @@
+import * as fs from 'fs'
+import * as formdata from 'form-data'
+
+const port = 8080;
+let recursive = false;
+let filename = './temp';
+
+let watcher_options = {
+    recursive,};
+
+let listener: (evt: string, filename: string) => void = (evt, filename) => {
+    console.log(`evt=${evt}, filename=${filename}`);
+    // upload the file
+    const form = new formdata.FormData();
+    form.append('my_file', fs.createReadStream(filename) as any);
+    form.submit(`http://localhost:${port}`, (err, res) => {
+        res.resume();
+    })
+}
+
+let fs_watcher = fs.watch(filename, watcher_options, listener);

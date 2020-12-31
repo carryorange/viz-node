@@ -1,0 +1,20 @@
+{
+    "root": {
+        "label": 1,
+        "left": {
+            "label": "2",
+            "left": {
+                "label": "4"
+            },
+            "right": {
+                "label": "5",
+                "left": {
+                    "label": "8"
+                }
+            },
+            "last": {
+                "name": "hello"
+            }
+        }
+    }
+}
